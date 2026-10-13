@@ -53,6 +53,42 @@ activities = {
             "john@mergington.edu",
             "olivia@mergington.edu"
         ]
+    },
+    "Soccer Club": {
+        "description": "Practice soccer skills and play team matches",
+        "schedule": "Mondays and Wednesdays, 3:30 PM - 4:30 PM",
+        "max_participants": 20,
+        "participants": []
+    },
+    "Volleyball Club": {
+        "description": "Learn volleyball techniques and play friendly games",
+        "schedule": "Tuesdays and Thursdays, 3:30 PM - 4:30 PM",
+        "max_participants": 16,
+        "participants": []
+    },
+    "Art Club": {
+        "description": "Explore drawing, painting, and other visual arts",
+        "schedule": "Wednesdays, 3:30 PM - 5:00 PM",
+        "max_participants": 15,
+        "participants": []
+    },
+    "Drama Club": {
+        "description": "Develop acting skills and prepare stage performances",
+        "schedule": "Fridays, 3:30 PM - 5:00 PM",
+        "max_participants": 18,
+        "participants": []
+    },
+    "Science Club": {
+        "description": "Explore scientific topics through experiments and projects",
+        "schedule": "Tuesdays, 3:30 PM - 4:30 PM",
+        "max_participants": 14,
+        "participants": []
+    },
+    "Debate Club": {
+        "description": "Practice research, public speaking, and structured debate",
+        "schedule": "Thursdays, 3:30 PM - 4:30 PM",
+        "max_participants": 12,
+        "participants": []
     }
 }
 
@@ -92,4 +128,3 @@ def signup_for_activity(activity_name: str, email: str):
     activity["participants"].append(email)
 
     return {"message": f"Signed up {email} for {activity_name}"}
-
